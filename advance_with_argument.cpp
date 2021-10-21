@@ -3,8 +3,6 @@ using namespace std;
 
 int main(){
     long double pi=3.141592653589793;
-    // cout<<"HELLO"<<ends;
-    // cout<<"WORLD";
     cout<<setw(8)<<22<<endl;
     cout<<setw(8)<<4444<<endl;
     cout<<setw(8)<<666666<<endl;
