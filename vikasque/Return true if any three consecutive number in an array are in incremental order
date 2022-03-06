@@ -1,0 +1,31 @@
+// Return true if any three consecutive number in an array are in incremental order
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+// 		System.out.println("GfG!");
+        int arr[] = {1,2,3,7,4,6};
+        
+        //Code 
+        
+        int c=0;
+        for(int i : arr ){
+            if(i==(i+1)-1){
+                c++;
+                if(c==2){
+                    break;
+                }
+            }
+            else{
+                c=0;        
+            }
+        }
+        if(c==2){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
+	}
+}
