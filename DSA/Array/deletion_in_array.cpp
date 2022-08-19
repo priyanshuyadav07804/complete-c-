@@ -1,11 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+void printarray(int* arr,int size){
+    cout<<"Array = {";
+    for(int i = 0;i<size;i++){
+        if(i == 5){
+            cout<<arr[i];
+        }
+        else{
+            cout<<arr[i]<<" ";
+        }
+    }
+    cout<<"}"<<endl;
+}
 int main(){
     //For Deletion we have to shift elements to lesser index
     int arr[] = {34,50,12,65,29,80};
     int size = sizeof(arr)/sizeof(arr[0]);
     int choice;
+    printarray(arr,size);
     cout<<"press 1 for direct deleting element or press 2 for delete using index : ";
     cin>>choice;
     switch(choice){
